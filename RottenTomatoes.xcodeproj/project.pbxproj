@@ -60,7 +60,6 @@
 				0C3B118727F96F9C00FE9B27 /* AppDelegate.swift */,
 				0C3B118927F96F9C00FE9B27 /* SceneDelegate.swift */,
 				0C3B118D27F96F9C00FE9B27 /* Main.storyboard */,
-				0C3B119B27F9F7BF00FE9B27 /* MoviesViewController.swift */,
 				0C3B119027F96F9E00FE9B27 /* Assets.xcassets */,
 				0C3B119227F96F9E00FE9B27 /* LaunchScreen.storyboard */,
 				0C3B119527F96F9E00FE9B27 /* Info.plist */,
@@ -71,6 +70,7 @@
 		0C3B119D27F9F8ED00FE9B27 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0C3B119B27F9F7BF00FE9B27 /* MoviesViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		0C3B118827F96F9C00FE9B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B118727F96F9C00FE9B27 /* AppDelegate.swift */; };
 		0C3B118A27F96F9C00FE9B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B118927F96F9C00FE9B27 /* SceneDelegate.swift */; };
-		0C3B118C27F96F9C00FE9B27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B118B27F96F9C00FE9B27 /* ViewController.swift */; };
 		0C3B118F27F96F9C00FE9B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3B118D27F96F9C00FE9B27 /* Main.storyboard */; };
 		0C3B119127F96F9E00FE9B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3B119027F96F9E00FE9B27 /* Assets.xcassets */; };
 		0C3B119427F96F9E00FE9B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3B119227F96F9E00FE9B27 /* LaunchScreen.storyboard */; };
+		0C3B119C27F9F7BF00FE9B27 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B119B27F9F7BF00FE9B27 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C3B118427F96F9C00FE9B27 /* RottenTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3B118727F96F9C00FE9B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C3B118927F96F9C00FE9B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C3B118B27F96F9C00FE9B27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C3B118E27F96F9C00FE9B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C3B119027F96F9E00FE9B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C3B119327F96F9E00FE9B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C3B119527F96F9E00FE9B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C3B119B27F9F7BF00FE9B27 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		0C3B118627F96F9C00FE9B27 /* RottenTomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				0C3B119D27F9F8ED00FE9B27 /* View Controllers */,
 				0C3B118727F96F9C00FE9B27 /* AppDelegate.swift */,
 				0C3B118927F96F9C00FE9B27 /* SceneDelegate.swift */,
-				0C3B118B27F96F9C00FE9B27 /* ViewController.swift */,
 				0C3B118D27F96F9C00FE9B27 /* Main.storyboard */,
 				0C3B119027F96F9E00FE9B27 /* Assets.xcassets */,
 				0C3B119227F96F9E00FE9B27 /* LaunchScreen.storyboard */,
 				0C3B119527F96F9E00FE9B27 /* Info.plist */,
 			);
 			path = RottenTomatoes;
+			sourceTree = "<group>";
+		};
+		0C3B119D27F9F8ED00FE9B27 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C3B119B27F9F7BF00FE9B27 /* MoviesViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C3B118C27F96F9C00FE9B27 /* ViewController.swift in Sources */,
 				0C3B118827F96F9C00FE9B27 /* AppDelegate.swift in Sources */,
 				0C3B118A27F96F9C00FE9B27 /* SceneDelegate.swift in Sources */,
+				0C3B119C27F9F7BF00FE9B27 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

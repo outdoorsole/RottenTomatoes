@@ -34,3 +34,28 @@ class MoviesViewController: UIViewController {
     }
 
 }
+
+// Data Source: Specifies the data of the tableView
+extension MoviesViewController: UITableViewDataSource {
+
+    // Required data source methods:
+    // (1) tableView(_:numberOfRowsInSection:) - sets the number of rows for each section to display
+    // (2) tableView(_:cellForRowAt:) - configures the instance of the cell at the indexPath
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let movies = movies {
+            return movies.count
+        } else {
+            return 0
+        }
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
+        return cell
+    }
+
+}
+
+// Delegate: Handles the events
+extension MoviesViewController: UITableViewDelegate {}

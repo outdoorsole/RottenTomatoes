@@ -29,6 +29,9 @@ class MoviesViewController: UIViewController {
                     let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any]
                     if let json = jsonObject {
                         self.movies = json["results"] as? [[String: Any]]
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
                     }
                 } catch {}
             }
@@ -55,6 +58,10 @@ extension MoviesViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
+        if let movies = movies {
+            let movie = movies[indexPath.row]
+            cell.textLabel?.text = movie["title"] as? String
+        }
         return cell
     }
 

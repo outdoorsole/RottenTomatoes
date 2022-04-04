@@ -16,6 +16,9 @@ class MoviesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.dataSource = self
+        tableView.delegate = self
+
         guard let url = URL(string: "https://www.rottentomatoes.com/api/private/v2.0/browse?type=in-theaters") else { return }
 
         URLSession.shared.dataTask(with: url) { [weak self] data, response, error in

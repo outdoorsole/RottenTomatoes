@@ -37,6 +37,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C33D3FE27FC0FAF004ED988 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0C3B117B27F96F9C00FE9B27 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +63,7 @@
 		0C3B118627F96F9C00FE9B27 /* RottenTomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				0C33D3FE27FC0FAF004ED988 /* Views */,
 				0C3B119D27F9F8ED00FE9B27 /* View Controllers */,
 				0C3B118727F96F9C00FE9B27 /* AppDelegate.swift */,
 				0C3B118927F96F9C00FE9B27 /* SceneDelegate.swift */,

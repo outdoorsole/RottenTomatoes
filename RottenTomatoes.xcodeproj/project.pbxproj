@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C33D40027FC102A004ED988 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33D3FF27FC102A004ED988 /* MovieCell.swift */; };
 		0C3B118827F96F9C00FE9B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B118727F96F9C00FE9B27 /* AppDelegate.swift */; };
 		0C3B118A27F96F9C00FE9B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B118927F96F9C00FE9B27 /* SceneDelegate.swift */; };
 		0C3B118F27F96F9C00FE9B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3B118D27F96F9C00FE9B27 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C33D3FF27FC102A004ED988 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		0C3B118427F96F9C00FE9B27 /* RottenTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3B118727F96F9C00FE9B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C3B118927F96F9C00FE9B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C33D3FE27FC0FAF004ED988 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C33D3FF27FC102A004ED988 /* MovieCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0C3B117B27F96F9C00FE9B27 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		0C3B118627F96F9C00FE9B27 /* RottenTomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				0C33D3FE27FC0FAF004ED988 /* Views */,
 				0C3B119D27F9F8ED00FE9B27 /* View Controllers */,
 				0C3B118727F96F9C00FE9B27 /* AppDelegate.swift */,
 				0C3B118927F96F9C00FE9B27 /* SceneDelegate.swift */,
@@ -148,6 +159,7 @@
 			files = (
 				0C3B118827F96F9C00FE9B27 /* AppDelegate.swift in Sources */,
 				0C3B118A27F96F9C00FE9B27 /* SceneDelegate.swift in Sources */,
+				0C33D40027FC102A004ED988 /* MovieCell.swift in Sources */,
 				0C3B119C27F9F7BF00FE9B27 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

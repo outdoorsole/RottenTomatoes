@@ -6,5 +6,5 @@ target 'RottenTomatoes' do
   use_frameworks!
 
   # Pods for RottenTomatoes
-
+  pod 'AFNetworking'
 end

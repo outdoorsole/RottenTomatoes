@@ -43,13 +43,15 @@ class MoviesViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPath(for: cell)!
+        if let movies = movies, let cell = sender as? UITableViewCell {
+            guard let indexPath = tableView.indexPath(for: cell) else { return }
 
-        let movie = movies![indexPath.row]
+            let movie = movies[indexPath.row]
 
-        let movieDetailsViewController = segue.destination as! MovieDetailsViewController
-        movieDetailsViewController.movie = movie
+            if let movieDetailsViewController = segue.destination as? MovieDetailsViewController {
+                movieDetailsViewController.movie = movie
+            }
+        }
     }
 
 }

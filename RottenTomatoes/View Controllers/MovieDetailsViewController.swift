@@ -13,10 +13,12 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var synopsisLabel: UILabel!
 
-    var movie: [String: Any]!
+    var movie: [String: Any]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        guard let movie = movie else { return }
 
         titleLabel.text = movie["title"] as? String
         synopsisLabel.text = movie["synopsis"] as? String

@@ -78,8 +78,9 @@ extension MoviesViewController: UITableViewDataSource {
             cell.titleLabel.text = movie["title"] as? String
             cell.synopsisLabel.text = movie["synopsis"] as? String
 
-            let url = URL(string: (movie as NSDictionary).value(forKeyPath: "posters.primary") as! String)!
-            cell.posterView.setImageWith(url)
+            if let urlString = (movie as NSDictionary).value(forKeyPath: "posters.primary") as? String, let url = URL(string: urlString) {
+                cell.posterView.setImageWith(url)
+            }
         }
         return cell
     }

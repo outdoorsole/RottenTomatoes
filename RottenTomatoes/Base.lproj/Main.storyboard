@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="95.652173913043484" y="139.95535714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Details View Controller-->
         <scene sceneID="OzT-os-9hl">
             <objects>
-                <viewController id="Y9e-CO-0ht" sceneMemberID="viewController">
+                <viewController id="Y9e-CO-0ht" customClass="MovieDetailsViewController" customModule="RottenTomatoes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7pk-T7-jjt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

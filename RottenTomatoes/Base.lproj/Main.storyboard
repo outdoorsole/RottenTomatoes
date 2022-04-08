@@ -105,6 +105,11 @@
                         <viewLayoutGuide key="safeArea" id="Gwt-OC-IJU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="7O4-wv-jum" id="yGZ-jN-LqX"/>
+                        <outlet property="synopsisLabel" destination="woc-lI-CNM" id="sd8-Rv-kDy"/>
+                        <outlet property="titleLabel" destination="Ykc-Ao-0ig" id="s06-FI-yTO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GU9-6d-mrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

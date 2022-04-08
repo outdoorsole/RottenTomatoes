@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movies View Controller-->
+        <!--Movies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MoviesViewController" customModule="RottenTomatoes" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,7 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fjw-fH-UBa"/>
+                    <navigationItem key="navigationItem" title="Movies" id="fjw-fH-UBa"/>
                     <connections>
                         <outlet property="tableView" destination="tJl-YV-EO9" id="a85-8u-xGx"/>
                     </connections>

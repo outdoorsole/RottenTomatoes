@@ -17,6 +17,9 @@ class MovieDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        titleLabel.text = movie["title"] as? String
+        synopsisLabel.text = movie["synopsis"] as? String
     }
 
 }

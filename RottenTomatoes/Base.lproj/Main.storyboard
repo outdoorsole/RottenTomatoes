@@ -21,11 +21,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="140" id="38g-SI-4Qi" customClass="MovieCell" customModule="RottenTomatoes" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="140" id="38g-SI-4Qi" customClass="MovieCell" customModule="RottenTomatoes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="38g-SI-4Qi" id="NUG-ZD-8MP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvl-7V-axq">
@@ -52,6 +52,7 @@
                                             <outlet property="posterView" destination="h7v-iz-NtP" id="O7d-EP-Vsb"/>
                                             <outlet property="synopsisLabel" destination="K7G-UP-1G6" id="amR-SI-OEv"/>
                                             <outlet property="titleLabel" destination="mvl-7V-axq" id="hgN-tm-4mi"/>
+                                            <segue destination="Y9e-CO-0ht" kind="push" id="AlM-DT-tQM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -73,7 +74,7 @@
             <objects>
                 <viewController id="Y9e-CO-0ht" customClass="MovieDetailsViewController" customModule="RottenTomatoes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7pk-T7-jjt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7O4-wv-jum">
@@ -105,6 +106,7 @@
                         <viewLayoutGuide key="safeArea" id="Gwt-OC-IJU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oMH-9d-Qpz"/>
                     <connections>
                         <outlet property="imageView" destination="7O4-wv-jum" id="yGZ-jN-LqX"/>
                         <outlet property="synopsisLabel" destination="woc-lI-CNM" id="sd8-Rv-kDy"/>

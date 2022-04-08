@@ -85,4 +85,10 @@ extension MoviesViewController: UITableViewDataSource {
 }
 
 // Delegate: Handles the events
-extension MoviesViewController: UITableViewDelegate {}
+extension MoviesViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+}

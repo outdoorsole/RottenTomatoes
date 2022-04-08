@@ -20,6 +20,9 @@ class MovieDetailsViewController: UIViewController {
 
         titleLabel.text = movie["title"] as? String
         synopsisLabel.text = movie["synopsis"] as? String
+
+        let url = URL(string: (movie as NSDictionary).value(forKeyPath: "posters.primary") as! String)!
+        imageView.setImageWith(url)
     }
 
 }

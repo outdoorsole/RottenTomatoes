@@ -39,6 +39,21 @@ class MoviesViewController: UIViewController {
         .resume()
     }
 
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let movies = movies, let cell = sender as? UITableViewCell {
+            guard let indexPath = tableView.indexPath(for: cell) else { return }
+
+            let movie = movies[indexPath.row]
+
+            if let movieDetailsViewController = segue.destination as? MovieDetailsViewController {
+                movieDetailsViewController.movie = movie
+            }
+        }
+    }
+
 }
 
 // Data Source: Specifies the data of the tableView
@@ -63,8 +78,9 @@ extension MoviesViewController: UITableViewDataSource {
             cell.titleLabel.text = movie["title"] as? String
             cell.synopsisLabel.text = movie["synopsis"] as? String
 
-            let url = URL(string: (movie as NSDictionary).value(forKeyPath: "posters.primary") as! String)!
-            cell.posterView.setImageWith(url)
+            if let urlString = (movie as NSDictionary).value(forKeyPath: "posters.primary") as? String, let url = URL(string: urlString) {
+                cell.posterView.setImageWith(url)
+            }
         }
         return cell
     }
@@ -72,4 +88,10 @@ extension MoviesViewController: UITableViewDataSource {
 }
 
 // Delegate: Handles the events
-extension MoviesViewController: UITableViewDelegate {}
+extension MoviesViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+}
